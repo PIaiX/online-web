@@ -793,7 +793,40 @@ header {
             height: 60px;
         }
     }
-    
+    .main {
+        display: flex;
+        align-items: flex-end;
+        .post-img {
+            flex: 1;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+        ul {
+            width: var(--padd);
+            li {
+                @include flex-center();
+                flex-direction: column;
+                button {
+                    width: 2.5em;
+                    height: 2.5em;
+                    border-radius: 50%;
+                    background-color: #F4F4F4;
+                }
+                &:not(:first-child) {
+                    margin-top: .75em;
+                }
+            }
+        }
+    }
+    .descr {
+        padding-right: var(--padd);
+    }
+    .comments-box {
+        border-top: 2px solid #EAEAEA;
+        border-bottom: 2px solid #EAEAEA;
+        padding: .75em 0;
+    }
 }
 
 footer {

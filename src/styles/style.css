@@ -1237,6 +1237,66 @@ header a:hover img, header a.active img {
   height: 60px;
 }
 
+.post-card .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.post-card .main .post-img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+
+.post-card .main ul {
+  width: var(--padd);
+}
+
+.post-card .main ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.post-card .main ul li button {
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  background-color: #F4F4F4;
+}
+
+.post-card .main ul li:not(:first-child) {
+  margin-top: .75em;
+}
+
+.post-card .descr {
+  padding-right: var(--padd);
+}
+
+.post-card .comments-box {
+  border-top: 2px solid #EAEAEA;
+  border-bottom: 2px solid #EAEAEA;
+  padding: .75em 0;
+}
+
 footer {
   position: fixed;
   bottom: 0px;
